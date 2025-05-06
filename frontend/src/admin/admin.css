@@ -1,0 +1,138 @@
+/* General container for the admin page */
+.admin-container {
+  display: flex;
+  min-height: 100vh;
+  font-family: Arial, sans-serif;
+  background-color: #f4f6f9;
+}
+
+/* Sidebar styles */
+.admin-sidebar {
+  width: 220px;
+  background-color: #222;
+  color: white;
+  padding: 20px;
+}
+
+.admin-sidebar h3 {
+  margin-bottom: 20px;
+}
+
+.admin-sidebar ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.admin-sidebar li {
+  margin: 10px 0;
+  padding: 10px;
+  background: #333;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.admin-sidebar li:hover {
+  background-color: #444;
+}
+
+/* Main content area */
+.admin-main-content {
+  flex: 1;
+  padding: 30px;
+}
+
+/* Top bar styles */
+.admin-top-bar {
+  position: fixed;
+  top: 0;
+  left: 250px; /* Align with sidebar */
+  right: 0;
+  height: 70px;
+  background-color: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 30px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  z-index: 10;
+}
+
+/* Search input in the top bar */
+.search-input {
+  width: 60%;
+  max-width: 500px;
+  padding: 12px 16px;
+  border: 1px solid #dcdcdc;
+  border-radius: 8px;
+  font-size: 16px;
+}
+
+.search-input:focus {
+  outline: none;
+  border-color: #4e9af1;
+  box-shadow: 0 0 0 2px rgba(78, 154, 241, 0.2);
+}
+
+/* Add Product button */
+.add-btn {
+  background-color: #4e9af1;
+  color: #ffffff;
+  border: none;
+  padding: 12px 24px;
+  font-size: 16px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.add-btn:hover {
+  background-color: #397ed0;
+}
+
+/* Product table styles */
+/* Button styles for edit/delete */
+.edit-btn,
+.delete-btn {
+  padding: 6px 12px;
+  font-size: 14px;
+  cursor: pointer;
+  border: none;
+  border-radius: 4px;
+}
+
+.edit-btn {
+  background-color: #3498db;
+  color: white;
+}
+
+.delete-btn {
+  background-color: #e74c3c;
+  color: white;
+}
+
+.delete-btn:hover {
+  background-color: #c0392b;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .admin-container {
+    flex-direction: column;
+  }
+
+  .admin-top-bar {
+    left: 0;
+    padding: 0 15px;
+    flex-direction: column;
+    height: auto;
+    gap: 10px;
+  }
+
+  .search-input {
+    width: 100%;
+  }
+
+  .admin-form {
+    margin: 100px 20px 20px 20px;
+    padding: 20px;
+  }
+}

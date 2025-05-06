@@ -1,0 +1,149 @@
+General Page Layout
+.products-page {
+    padding: 30px;
+    background-color: #f9f9f9;
+    min-height: 100vh;
+  }
+  
+  h2 {
+    font-size: 28px;
+    text-align: center;
+    margin-bottom: 30px;
+    color: #333;
+  }
+  
+  .products-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    margin-top: 20px;
+  }
+  
+  /* Product Card */
+  .product-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    height: 350px;
+    width: 220px;
+    padding: 15px;
+    text-align: center;
+    border: 1px solid #ddd;
+    border-radius: 12px;
+    background-color: #fff;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+    transition: all 0.3s ease;
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .product-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+  }
+  
+  .product-card img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 8px;
+  }
+  
+  .product-card h3 {
+    font-size: 18px;
+    margin: 10px 0 5px;
+    color: #333;
+    min-height: 40px; /* Consistent spacing */
+  }
+  
+  .product-card p {
+    font-weight: bold;
+    color: green;
+    margin-bottom: 12px;
+  }
+  
+  /* Product Buttons */
+  .product-buttons {
+    margin-top: auto;
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+    margin-top: 15px;
+  }
+  
+  /* Button Styles */
+  .buy-btn {
+    background-color: #0f9d58; /* Green */
+    color: white;
+    border: none;
+    padding: 8px 12px;
+    border-radius: 6px;
+    cursor: pointer;
+    flex: 1;
+    transition: background-color 0.3s ease;
+  }
+  
+  .buy-btn:hover {
+    background-color: #0a7f45;
+  }
+  
+  .cart-btn {
+    background-color: #ff8c00; /* Orange */
+    color: white;
+    border: none;
+    padding: 8px 12px;
+    border-radius: 6px;
+    cursor: pointer;
+    flex: 1;
+    transition: background-color 0.3s ease;
+  }
+  
+  .cart-btn:hover {
+    background-color: #e67600;
+  }
+  
+  /* Wishlist Icon */
+  .wishlist-icon {
+    position: absolute;
+    top: 8px;
+    right: 8px;
+    font-size: 20px;
+    cursor: pointer;
+    color: #f2a900;
+  }
+  
+  /* No Data Message */
+  .no-data {
+    text-align: center;
+    font-size: 18px;
+    color: #888;
+  }
+  
+  /* Cart Message */
+  .cart-message {
+    color: green;
+    font-weight: bold;
+    margin-top: 10px;
+    animation: fadeIn 0.3s ease-in;
+  }
+  
+  @keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+  }
+  @media (max-width: 768px) {
+    .products-grid {
+      gap: 15px;
+    }
+  
+    .product-card {
+      width: 200px;
+      height: 320px;
+    }
+  
+    .product-card img {
+      height: 160px;
+    }
+  }
+    

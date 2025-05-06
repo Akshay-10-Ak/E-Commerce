@@ -1,0 +1,106 @@
+.product-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  height: 350px;
+  width: 220px;
+  padding: 10px;
+  text-align: center;
+  border: 1px solid #ddd;
+  border-radius: 12px;
+  background-color: #fff;
+  transition: 0.3s ease;
+  position: relative;
+}
+
+.product-card:hover {
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.product-card img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.product-card h3 {
+  font-size: 18px;
+  margin: 10px 0 5px;
+  min-height: 40px; /* Consistent spacing */
+}
+
+.product-card p {
+  font-weight: bold;
+  color: green;
+  margin-bottom: 12px;
+}
+
+.product-buttons {
+  margin-top: auto;
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+/* ✅ Distinct button styles */
+.buy-btn {
+  background-color: #0f9d58; /* Green */
+  color: white;
+  border: none;
+  padding: 8px 12px;
+  border-radius: 6px;
+  cursor: pointer;
+  flex: 1;
+  transition: background-color 0.3s ease;
+ 
+}
+
+.buy-btn:hover {
+  background-color: #0a7f45;
+}
+
+.cart-btn {
+  background-color: #ff8c00; /* Orange */
+  color: white;
+  border: none;
+  padding: 8px 12px;
+  border-radius: 6px;
+  cursor: pointer;
+  flex: 1;
+  transition: background-color 0.3s ease;
+  height: 40px;
+  margin-top: 10px;
+}
+
+.cart-btn:hover {
+  background-color: #e67600;
+}
+
+.wishlist-icon {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.cart-message {
+  color: green;
+  font-weight: bold;
+  margin-top: 10px;
+  animation: fadeIn 0.3s ease-in;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+.products-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}

@@ -1,0 +1,107 @@
+/* src/pages/notification.css */
+
+.notification {
+    position: fixed; /* Stay in place during scrolling */
+    top: 20px; /* Adjust vertical position */
+    left: 50%;
+    transform: translateX(-50%); /* Center horizontally */
+    padding: 1rem 2rem;
+    border-radius: 8px;
+    z-index: 1000; /* Ensure it's on top of other elements */
+    opacity: 0.9; /* Slightly transparent */
+    animation: fadeOut 3s forwards; /* Fade out animation */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .notification.success {
+    background-color: #4CAF50; /* Green for success */
+    color: white;
+  }
+  
+  .notification.error {
+    background-color: #f44336; /* Red for error */
+    color: white;
+  }
+  
+  .notification.warning {
+    background-color: #ff9800; /* Orange for warning */
+    color: white;
+  }
+  
+  @keyframes fadeOut {
+    from { opacity: 0.9; }
+    to { opacity: 0; visibility: hidden; }
+  }
+  /* src/pages/notification.css */
+
+.notification {
+    position: fixed; /* Stay in place during scrolling */
+    top: 20px; /* Adjust vertical position */
+    left: 50%;
+    transform: translateX(-50%); /* Center horizontally */
+    padding: 1rem 2rem;
+    border-radius: 8px;
+    z-index: 1000; /* Ensure it's on top of other elements */
+    opacity: 0.9; /* Slightly transparent */
+    animation: fadeOut 3s forwards; /* Fade out animation */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .notification.success {
+    background-color: #4CAF50; /* Green for success */
+    color: white;
+  }
+  
+  .notification.error {
+    background-color: #f44336; /* Red for error */
+    color: white;
+  }
+  
+  .notification.warning {
+    background-color: #ff9800; /* Orange for warning */
+    color: white;
+  }
+  
+  .notification.info {
+    background-color: #2196F3; /* Blue for information */
+    color: white;
+  }
+  
+  @keyframes fadeOut {
+    from { opacity: 0.9; }
+    to { opacity: 0; visibility: hidden; }
+  }
+  /* src/pages/notification.css */
+
+.notification {
+    position: fixed; /* Stay in place during scrolling */
+    top: 20px; /* Adjust vertical position */
+    left: 50%;
+    transform: translateX(-50%); /* Center horizontally */
+    padding: 1rem 2rem;
+    border-radius: 8px;
+    z-index: 1000; /* Ensure it's on top of other elements */
+    opacity: 0.9; /* Slightly transparent */
+    animation: fadeOut 3s forwards; /* Fade out animation */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .notification.success {
+    background-color: #4CAF50; /* Green for success */
+    color: white;
+  }
+  
+  .notification.error {
+    background-color: #f44336; /* Red for error */
+    color: white;
+  }
+  
+  .notification.warning {
+    background-color: #ff9800; /* Orange for warning */
+    color: white;
+  }
+  
+  @keyframes fadeOut {
+    from { opacity: 0.9; }
+    to { opacity: 0; visibility: hidden; }
+  }

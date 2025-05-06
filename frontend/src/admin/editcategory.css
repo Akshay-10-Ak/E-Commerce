@@ -1,0 +1,207 @@
+/* ====================== PAGE WRAPPER ====================== */
+.edit-page-wrapper {
+  display: flex;
+  min-height: 100vh;
+  background-color: #f7f9fc;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin-top: 50px;
+}
+
+/* ====================== SIDEBAR ====================== */
+.edit-page-wrapper > .sidebar {
+  width: 250px;
+  color: #fff;
+}
+
+/* ====================== FIXED HEADER ====================== */
+.edit-page-header {
+  position: fixed;
+  top: 0;
+  left: 250px;
+  right: 0;
+  background-color: #ffffff;
+  padding: 20px 40px;
+  z-index: 10;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+}
+
+/* ====================== MAIN CONTENT ====================== */
+.edit-category-container {
+  flex: 1;
+  width: 100%;
+  height: 700px;
+  max-width: 600px; /* Reduced width for form */
+  margin: 100px auto 40px;
+  padding: 30px;
+  background-color: #ffffff;
+  border-radius: 16px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+}
+
+/* ====================== HEADING ====================== */
+.edit-category-container h2 {
+  font-size: 28px;
+  font-weight: 600;
+  color: #333;
+  margin-bottom: 25px;
+  text-align: center;
+}
+
+/* ====================== FORM ====================== */
+.edit-category-container form {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.edit-category-container input[type="text"],
+.edit-category-container input[type="number"],
+.edit-category-container input[type="file"],
+.edit-category-container select {
+  width: 100%;
+  padding: 12px 15px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 16px;
+  transition: border-color 0.3s ease;
+}
+
+.edit-category-container input:focus,
+.edit-category-container select:focus {
+  border-color: #4e9af1;
+  outline: none;
+  box-shadow: 0 0 0 3px rgba(78, 154, 241, 0.2);
+}
+
+/* ====================== SUBMIT BUTTON ====================== */
+.edit-category-container button[type="submit"] {
+  align-self: flex-end;
+  padding: 12px 24px;
+  background-color: #4e9af1;
+  color: #ffffff;
+  font-weight: bold;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.edit-category-container button[type="submit"]:hover {
+  background-color: #397ed0;
+}
+
+/* ====================== IMAGE PREVIEW ====================== */
+.preview-image {
+  margin-top: 10px;
+  text-align: center;
+}
+
+.preview-image img {
+  max-width: 200px;
+  border-radius: 10px;
+  border: 1px solid #ccc;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* ====================== HEADER ACTIONS ====================== */
+.edit-page-actions {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  width: 100%;
+  gap: 15px;
+  margin-bottom: 20px;
+}
+
+/* ====================== SEARCH FIELD ====================== */
+.category-search {
+  padding: 10px 14px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 16px;
+  width: 250px;
+  transition: border-color 0.3s ease;
+}
+
+/* ====================== ADD CATEGORY BUTTON ====================== */
+.add-category-btn {
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: #ffffff;
+  font-weight: bold;
+  border: none;
+  border-radius: 8px;
+  font-size: 14px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin-left: auto;
+}
+
+.add-category-btn:hover {
+  background-color: #0056b3;
+}
+
+/* ====================== RESPONSIVE STYLES ====================== */
+@media (max-width: 768px) {
+  .edit-page-wrapper > .sidebar {
+    display: none;
+  }
+
+  .edit-page-header {
+    left: 0;
+    padding: 15px 20px;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .edit-category-container {
+    padding: 20px;
+    margin-top: 150px;
+    width: 90%;
+  }
+
+  .edit-page-actions {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 10px;
+    width: 100%;
+  }
+
+  .category-search {
+    width: 100%;
+  }
+
+  .add-category-btn {
+    width: 100%;
+    margin-left: 0;
+  }
+}
+/* ====================== IMAGE + BUTTON CONTAINER ====================== */
+.image-and-submit {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  margin-top: 10px;
+}
+
+/* Keep button same as before */
+.edit-category-container button[type="submit"] {
+  padding: 12px 24px;
+  background-color: #4e9af1;
+  color: #ffffff;
+  font-weight: bold;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin-top: 10px; /* spacing from image */
+}
+
+.edit-category-container button[type="submit"]:hover {
+  background-color: #397ed0;
+}

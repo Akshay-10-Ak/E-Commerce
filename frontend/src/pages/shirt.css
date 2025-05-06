@@ -1,0 +1,308 @@
+.shirts-container {
+    padding: 20px;
+    background-color: #f9f9f9;
+  }
+  
+  .shirts-container h2 {
+    font-size: 28px;
+    text-align: center;
+    margin-bottom: 20px;
+    color: #333;
+  }
+  
+  .shirts-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+  }
+  
+  .shirt-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    height: 350px;
+    width: 220px;
+    padding: 10px;
+    text-align: center;
+    border: 1px solid #ddd;
+    border-radius: 12px;
+    background-color: #fff;
+    transition: 0.3s ease;
+    position: relative;
+  }
+  
+  .shirt-card:hover {
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  }
+  
+  .shirt-card img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 8px;
+  }
+  
+  .shirt-card .no-image {
+    width: 100%;
+    height: 180px;
+    background-color: #e0e0e0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #888;
+    border-radius: 8px;
+  }
+  
+  .shirt-card h3 {
+    font-size: 18px;
+    margin: 10px 0 5px;
+    min-height: 40px;
+    color: #333;
+  }
+  
+  .shirt-card .shirt-price {
+    font-weight: bold;
+    color: green;
+    margin-bottom: 12px;
+  }
+  
+  .shirt-card .shirt-description {
+    font-size: 14px;
+    color: #777;
+    margin-bottom: 12px;
+  }
+  
+  .shirt-card .shirt-description:after {
+    content: '...'; /* Append ellipsis to truncated text */
+  }
+  
+  .shirt-buttons {
+    margin-top: auto;
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+  }
+  
+  .shirt-buttons button {
+    padding: 8px 12px;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .shirt-buttons .view-btn {
+    background-color: #0f9d58; /* Green */
+    color: white;
+    border: none;
+  }
+  
+  .shirt-buttons .view-btn:hover {
+    background-color: #0a7f45;
+  }
+  
+  .shirt-buttons .cart-btn {
+    background-color: #ff8c00; /* Orange */
+    color: white;
+    border: none;
+    height: 37px;
+    margin-top: 12px;
+  }
+  
+  .shirt-buttons .cart-btn:hover {
+    background-color: #e67600;
+  }
+  
+  .no-data {
+    text-align: center;
+    color: #888;
+    font-size: 18px;
+    margin-top: 20px;
+  }
+  .shirts-container {
+    padding: 20px;
+    background-color: #f9f9f9;
+  }
+  
+  .shirts-container h2 {
+    font-size: 28px;
+    text-align: center;
+    margin-bottom: 20px;
+    color: #333;
+  }
+  
+  .shirts-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+  }
+  
+  .shirt-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    height: 400px;
+    width: 230px;
+    padding: 10px;
+    text-align: center;
+    border: 1px solid #ddd;
+    border-radius: 12px;
+    background-color: #fff;
+    transition: 0.3s ease;
+    position: relative;
+  }
+  
+  .shirt-card:hover {
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  }
+  
+  .shirt-card img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 8px;
+  }
+  
+  .no-image {
+    width: 100%;
+    height: 180px;
+    background-color: #e0e0e0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #888;
+    border-radius: 8px;
+  }
+  
+  .shirt-name {
+    font-size: 18px;
+    margin: 10px 0 5px;
+    min-height: 40px;
+    color: #333;
+  }
+  
+  .shirt-price {
+    font-weight: bold;
+    color: green;
+    margin-bottom: 8px;
+  }
+  
+  .shirt-description {
+    font-size: 14px;
+    color: #777;
+    margin-bottom: 10px;
+  }
+  
+  .shirt-buttons {
+    margin-top: auto;
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+  }
+  
+  .cart-btn, .buy-btn {
+    padding: 8px 10px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    flex: 1;
+    font-size: 14px;
+  }
+  
+  .cart-btn {
+    background-color: #ff8c00; /* Orange */
+    color: white;
+  }
+  
+  .cart-btn:hover {
+    background-color: #e67600;
+  }
+  
+  .buy-btn {
+    background-color: #0f9d58; /* Green */
+    color: white;
+  }
+  
+  .buy-btn:hover {
+    background-color: #0a7f45;
+  }
+  
+  .wishlist-icon {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 22px;
+    cursor: pointer;
+  }
+  .shirts-container {
+  padding: 20px;
+}
+
+/* .shirts-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 20px;
+} */
+
+.shirt-card {
+  border: 1px solid #ddd;
+  padding: 10px;
+  position: relative;
+}
+
+.shirt-image {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.shirt-buttons {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10px;
+}
+
+.cart-btn,
+.buy-btn {
+  padding: 8px 12px;
+  cursor: pointer;
+  
+}
+
+.wishlist-icon {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  cursor: pointer;
+}
+
+.message {
+  color: green;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+
+/* Animation keyframes */
+@keyframes pop {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.4);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+/* Class to trigger pop animation */
+.pop {
+  animation: pop 0.3s ease;
+}
+.wishlist-icon {
+  cursor: pointer;
+  font-size: 24px;
+  transition: color 0.3s ease; /* Smooth transition for color change */
+}

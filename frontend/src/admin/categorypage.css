@@ -1,0 +1,243 @@
+/* ========================================
+   Layout Container
+======================================== */
+.product-page-container {
+    display: flex;
+    min-height: 100vh;
+    background-color: #f9f9f9;
+  }
+  
+  .product-page {
+    flex: 1;
+    padding: 2rem;
+    background-color: #ffffff;
+  }
+  
+  /* ========================================
+     Admin Top Bar
+  ======================================== */
+  .admin-top-bar {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 1.5rem;
+  }
+  
+  .search-input {
+    flex: 1;
+    max-width: 300px;
+    padding: 0.5rem;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+  }
+  
+  .category-form {
+    display: flex;
+    gap: 0.5rem;
+    align-items: center;
+  }
+  
+  /* ========================================
+     Table Styles
+  ======================================== */
+  .product-table-container {
+    margin-top: 1.5rem;
+    overflow-x: auto;
+  }
+  
+  .product-table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  .product-table th,
+  .product-table td {
+    padding: 0.75rem;
+    text-align: left;
+    border: 1px solid #ddd;
+  }
+  
+  .product-table th {
+    background-color: #f2f2f2;
+    font-weight: bold;
+  }
+  
+  .no-data {
+    text-align: center;
+    color: #999;
+    font-style: italic;
+  }
+  
+  /* ========================================
+     Buttons
+  ======================================== */
+  .add-btn,
+  .delete-btn {
+    padding: 0.5rem 1rem;
+    font-size: 0.95rem;
+    border: none;
+    border-radius: 5px;
+    color: #ffffff;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .add-btn {
+    background-color: #007bff;
+  }
+  
+  .add-btn:hover {
+    background-color: #0056b3;
+  }
+  
+  .delete-btn {
+    background-color: #dc3545;
+  }
+  
+  .delete-btn:hover {
+    background-color: #c82333;
+  }
+  
+  .add-btn:disabled,
+  .delete-btn:disabled {
+    background-color: #888888;
+    cursor: not-allowed;
+  }
+  /* ========================================
+   Layout Container
+======================================== */
+.product-page-container {
+    display: flex;
+    min-height: 100vh;
+    background-color: #f9f9f9;
+  }
+  
+  .product-page {
+    flex: 1;
+    padding: 2rem;
+    background-color: #ffffff;
+  }
+  
+  /* ========================================
+     Admin Top Bar
+  ======================================== */
+  .admin-top-bar {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 1.5rem;
+  }
+  
+  .search-input {
+    flex: 1;
+    max-width: 300px;
+    padding: 0.5rem;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+  }
+  
+  .category-form {
+    display: flex;
+    gap: 0.5rem;
+    align-items: center;
+  }
+  
+  /* ========================================
+     Table Styles
+  ======================================== */
+  .product-table-container {
+    margin-top: 1.5rem;
+    overflow-x: auto;
+  }
+  
+  .product-table {
+    width: 100%;
+    border-collapse: collapse;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+    background-color: #fff;
+  }
+  
+  .product-table th,
+  .product-table td {
+    padding: 1rem;
+    text-align: left;
+    border-bottom: 1px solid #e0e0e0;
+    transition: background-color 0.3s ease;
+  }
+  
+  .product-table th {
+    background-color: #f8f9fa;
+    font-weight: 600;
+    color: #333;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+  }
+  
+  .product-table tr:hover {
+    background-color: #f1f1f1;
+  }
+  
+  .product-table td span.category-hover {
+    cursor: pointer;
+    color: #007bff;
+    text-decoration: underline;
+    transition: color 0.3s ease;
+  }
+  
+  .product-table td span.category-hover:hover {
+    color: #0056b3;
+  }
+  
+  /* No data message */
+  .no-data {
+    text-align: center;
+    color: #999;
+    font-style: italic;
+  }
+  
+  /* ========================================
+     Buttons
+  ======================================== */
+  .add-btn,
+  .delete-btn {
+    padding: 0.5rem 1.1rem;
+    font-size: 0.95rem;
+    border: none;
+    border-radius: 5px;
+    color: #ffffff;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .add-btn {
+    background-color: #007bff;
+    
+    
+  }
+  
+  .add-btn:hover {
+    background-color: #0056b3;
+  }
+  
+  .delete-btn {
+    background-color: #dc3545;
+  }
+  
+  .delete-btn:hover {
+    background-color: #c82333;
+  }
+  
+  .add-btn:disabled,
+  .delete-btn:disabled {
+    background-color: #888888;
+    cursor: not-allowed;
+  }
+  

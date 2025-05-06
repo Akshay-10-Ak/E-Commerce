@@ -1,0 +1,127 @@
+.banner-container {
+  position: relative;
+  width: 100%;
+}
+
+.home-banner {
+  width: 100%;
+  height: auto; /* Keeps full image visible */
+  display: block;
+  object-fit: contain; /* shows entire image without cropping */
+}
+
+.banner-content {
+  position: absolute;
+  top: 30%;
+  left: 10%;
+  color: white;
+  text-align: left;
+  z-index: 1;
+}
+
+/* Responsive fallback if image is too small for text */
+.banner-content h1 {
+  font-size: 40px;
+  margin-bottom: 10px;
+}
+
+.banner-content p {
+  font-size: 20px;
+  margin-bottom: 15px;
+}
+
+.shop-button {
+  padding: 10px 20px;
+  background-color: #ff4500;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.shop-button:hover {
+  background-color: #e63e00;
+}
+.section-title {
+  font-size: 24px;
+  margin: 20px 0 10px 10px;
+  font-weight: bold;
+  color: #222;
+}
+
+.product-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+  padding: 0 10px 30px;
+  margin-left: 50px;
+}
+.banner-container {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+}
+
+.banner-slide {
+  position: relative;
+}
+
+.home-banner {
+  width: 100%;
+  height: auto; 
+  object-fit: contain; 
+  display: block;
+}
+
+.banner-content {
+  position: absolute;
+  top: 30%;
+  left: 10%;
+  transform: translateY(-30%);
+  color: white;
+  z-index: 1;
+  text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.7);
+}
+
+.banner-content h1 {
+  font-size: 40px;
+  margin-bottom: 10px;
+}
+
+.banner-content p {
+  font-size: 20px;
+  margin-bottom: 15px;
+}
+
+.shop-button {
+  padding: 10px 20px;
+  background-color: #ff4500;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.shop-button:hover {
+  background-color: #e63e00;
+}
+
+.section-title {
+  font-size: 24px;
+  margin: 20px 0 10px 10px;
+  font-weight: bold;
+  color: #222;
+}
+
+.product-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+  padding: 0 10px 30px;
+  margin-left: 50px;
+}
+.home-banner{
+  margin-top: 0%;
+}
